@@ -1,4 +1,7 @@
+# This class is linked to the users table
 class User < ApplicationRecord
-    has_many :links
-    has_many :comments
+  # 1 user - N links
+  has_many :links
+  # 1 user - N comments
+  has_many :comments
 end
